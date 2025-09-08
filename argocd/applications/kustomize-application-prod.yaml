@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rslim087a/argocd-kubernetes-gitops-tutorial.git
+    repoURL: https://github.com/alexandermamaniy/argocd-kustomize.git
     targetRevision: HEAD
     path: kustomize/overlays/prod
   destination:
