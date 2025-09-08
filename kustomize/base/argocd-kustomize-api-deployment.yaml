@@ -19,7 +19,7 @@ spec:
       - name: ghcr-secret
       containers:
       - name: argocd-kustomize-api
-        image: ghcr.io/alexandermamaniy/kubernetes-cicd:c64e9e2d5a4063ba0a10c4908cec8286622fadaa
+        image: ghcr.io/alexandermamaniy/kubernetes-cicd:ae36878e499529dc2fcdb6afdf6a255c1b361e2e
         ports:
           - containerPort: 3000
         resources:
