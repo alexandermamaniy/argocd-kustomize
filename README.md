@@ -55,9 +55,14 @@ Verify Deployment:
 kubectl get pods -n argocd-kustomize
 ```
 
-![alt text](img/img.png)
+### Overview
+![img.png](img/overview.png)
 
+### Development
+![img.png](img/dev.png)
 
+### Production
+![img.png](img/prod.png)
 
 
 
