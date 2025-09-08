@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-kustomize-api
+  namespace: argocd-kustomize
+  labels:
+    app: argocd-kustomize-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argocd-kustomize-app
+  template:
+    metadata:
+      labels:
+        app: argocd-kustomize-app
+    spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+      containers:
+      - name: argocd-gitops-api
+        image: ghcr.io/alexandermamaniy/kubernetes-cicd:c64e9e2d5a4063ba0a10c4908cec8286622fadaa
+        ports:
+          - containerPort: 3000
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "250m"

@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-kustomize-api
+  namespace: argocd-kustomize 
+spec:
+  replicas: 1
