@@ -18,7 +18,7 @@ spec:
       imagePullSecrets:
       - name: ghcr-secret
       containers:
-      - name: argocd-gitops-api
+      - name: argocd-kustomize-api
         image: ghcr.io/alexandermamaniy/kubernetes-cicd:c64e9e2d5a4063ba0a10c4908cec8286622fadaa
         ports:
           - containerPort: 3000
