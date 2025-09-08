@@ -4,4 +4,4 @@ metadata:
   name: argocd-kustomize-api
   namespace: argocd-kustomize 
 spec:
-  replicas: 3
+  replicas: 6
